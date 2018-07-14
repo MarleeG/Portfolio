@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Righteous" rel="stylesheet">
 
     <!-- Animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
@@ -27,32 +27,100 @@
 <body>
     <div class="portfolio">
 
-        <nav class="navbar top navbar-dark bg-dark">
-            <a class="navbar-brand text-white mt-1 portfolio__title ml-auto" href="#">About</a>
-            <!-- nor working for right alignment: navbar-right | working for right aligned text: ml-auto -->
-            <a class="navbar-brand text-white portfolio__title" href="#">Education</a>
-            <a class="navbar-brand text-white portfolio__title mr-auto" href="#">Work Experience</a>
+        <nav class="navbar navbar-default navbar-fixed-top navbar-dark bg-dark">
+            <!-- top -->
+            <div class="container-fluid">
+                <a class="navbar-brand text-white mt-1 portfolio__title ml-auto" href="index.html#portfolio__about">About</a>
+                <!-- nor working for right alignment: navbar-right | working for right aligned text: ml-auto -->
+                <a class="navbar-brand text-white portfolio__title" href="index.html#portfolio__myPortHeader">Portfolio</a>
+                <a class="navbar-brand text-white portfolio__title mr-auto" href="#">Education</a>
+            </div>
+
         </nav>
 
         <br>
 
+        <!-- avatar -->
         <div class="dot animated bounceInDown">
             <img src="assets/images/IMG_0831.PNG" alt="avatar" id="portfolio__avatar">
         </div>
 
         <br>
 
-        <h3 class="portfolio__greetingText text-center mt-5 animated">
-            <!--  -->
+        <!-- Greeting Message -->
+        <h3 class="portfolio__greetingText text-center mt-5 animated ml-auto mr-auto">
             Hello!
         </h3>
 
         <br>
 
+        <!-- Typewriter Header -->
         <h1 class="portfolio__header__animated text-center animated" style="font-size: 75px;">I am a Web Developer!</h1>
 
+        <br>
+
+        <!-- My About Me -->
+        <div class="porforlio__aboutMe">
+
+            <!-- About me Header -->
+            <h2 id="portfolio__about" class="text-center animated">About Marlee Gerard</h2>
 
 
+            <!-- Portfolio Divider -->
+            <span class="text-center divided">
+                <hr class="portfolio__divider mr-auto left-hr animated" data-content="Love">
+
+                <img src="assets/images/rhombus.png" alt="circle" id="circle" class="animated">
+                <hr class="portfolio__divider ml-auto right-hr animated">
+            </span>
+
+
+            <p id="portfolio__bio" class="text-center">
+                Experience with full stack web-application. I was able to assist with debugging a web app (during its pilot) and providing
+                feedback on how to get maximum use out of it during my employment at The Home Depot. I am highly analytical
+                and able to multitask. I enjoy creating applications that can be useful too many as well as building on existing
+                projects to expand different capabilities and/or debugging it if needed. Many of my attributes include being
+                organized, positive attitude, supreme communication skills, quick learning ability, collaborating with others
+                well, and staying in sync with the latest technologies. I am aggressively passionate about Web Development
+                since it allows me to be creative in many different avenues such as; the functionality and/or the appearance
+                of an application.
+            </p>
+
+            <br/>
+
+            <div id="portfolio__skillSet" class="text-center">
+                Skill Set
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <img src="assets/images/html5.png" alt="html5" class="skill">
+                            <img src="assets/images/css3.png" alt="css3" class="skill">
+                            <img src="assets/images/js.png" alt="js" id="jsLogo">
+                            <img src="assets/images/node.png" alt="node" id="nodeLogo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+         <!-- My Portfolio -->
+        <div id="portfolio__myPort">
+
+            <!-- Portfolio Header -->
+            <h2 id="portfolio__myPortHeader" class="text-center animated">Portfolio</h2>
+
+
+            <!-- Portfolio Divider -->
+            <span class="text-center divided">
+                    <hr class="portfolio__divider mr-auto left-hr animated" data-content="Love">
+    
+                    <img src="assets/images/rhombus.png" alt="circle" id="circle" class="animated">
+                    <hr class="portfolio__divider ml-auto right-hr animated">
+                </span>
+
+        </div>
+        
 
 
         <!-- <div class="container-fluid portfolio__contents">

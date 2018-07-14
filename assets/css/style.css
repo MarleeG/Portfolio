@@ -1,12 +1,12 @@
 .portfolio{
     background-image: url("../images/lavendar.jpg");
-    height:800px;
+    height:700px;
     position: relative;
 }
 
-.portfolio__navBar{
+/* .portfolio__navBar{
     opacity: 100%;
-}
+} */
 
 .portfolio__greetingText{
     font-family: 'Righteous', cursive;
@@ -19,7 +19,6 @@
 
 .portfolio__title:hover{
     color: #B57EDC !important; 
-    /* text-shadow: 3px 2px #2A2A2A; */
 }
 
 .portfolio__title{
@@ -27,35 +26,37 @@
     font-size: 50px;
 }
 
-.dot {
+/* Circle */
+.dot{
     width: 300px;
     height: 300px;
     background-color: #343A3F;
     border-radius: 50%;
     display: inline-block;
-    /* float: right; */
     margin-top: 30px;
-    margin-left: 38%;
+    margin-left: 475px;
     box-shadow: 2px 6px 10px black;
 }
 
 
+/* Avatar */
 #portfolio__avatar{
     width: 250px;
     height: auto;
     position: relative;
     margin-left: 50px;
+    
 }
 
 .portfolio__header__animated{
     font-family: 'Righteous', cursive; /* Web-safe typewriter-like font */
     overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange; /* The typwriter cursor */
+    border-right: .15em solid #343A3F; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .1em; /* Adjust as needed */
     animation: 
-      typing 3.5s steps(30, end),
+      typing 3.5s steps(25, end),
       blinking-cursor .5s step-end infinite;
 }
   
@@ -72,7 +73,91 @@
   }
 
 
+/* About Me */
+.porforlio__aboutMe{
+    height: 695px;
+}
+
+/* Portfio */
+#portfolio__myPort{
+    height: 720px;
+    background-color: #B57EDC;
+    
+}
+
+#portfolio__myPortHeader{
+    position: relative;
+    /* margin-top: 50px; */
+    margin-top: 50px;
+}
+
+/* divider */
+.portfolio__divider{
+    width: 125px;
+    height: 5px;
+    margin-top: 20px;
+    background-color: black;
+    border-radius: 25px;
+    display: inline-block;
+}
+
+/* left hr */
+ .left-hr{
+    margin-left: 500px;
+}
+
+/* Circle in hr */
+#circle{
+    width: 15px;
+    height: auto;
+    position: relative;
+    display: inline-block;
+    bottom: 15px;
+}
+
+/* About Me Header and My Portfio Header */
+#portfolio__about{
+    font-family: 'Righteous', cursive;
+    margin-top: 50px;
+    font-size: 50px;
+}
+
+/* My Portfio Header */
+#portfolio__myPortHeader{
+    font-family: 'Righteous', cursive;
+    /* margin-top: 100px; */
+    font-size: 50px;
+}
 
 
+#portfolio__bio{
+    width: 700px;
+    margin: auto;
+    font-family: 'Comfortaa', cursive;
+}
 
+#portfolio__skillSet{
+    font-size: 30px;
+    margin: auto;
+    font-family: 'Righteous', cursive;
+    width: 100%;
+}
 
+.skill{
+    width: 70px;
+    height: auto;
+    margin: auto;
+   
+    text-shadow: 2px 6px 10px black;
+}
+
+#jsLogo{
+    width: 61px;
+    height: auto;
+}
+
+#nodeLogo{
+    width: 55px;
+    height: auto;
+    margin-left: 5px;
+}
