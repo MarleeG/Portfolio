@@ -197,17 +197,61 @@
     position: relative;
     top: 60px;
     left: 5px;
-    /* margin-right: 0px;
-    margin-left: 0px;
-    padding-left: 0px;
-    padding-right: 0px; */
-    /* float: left; */
+    border-radius: 20px;
 
 }
 
+/* Project List */
 .projectContainer{
     width: 1000px;
 }
    
-    
+/* About the Project - In Modal */
+.aboutProject{
+    margin-top: 40px;
+    width: 400px;
+    margin-left: 175px;
+}
 
+/* Project Video - In Modal */
+.projectVideo{
+    margin-left: 175px;
+    background-color: transparent;
+    padding: 0px;
+}
+
+/* In Modal - View Project Button */
+.projectButton{
+    position: relative;
+    left: 320px;
+}
+
+.contactInfo{
+    position: relative;
+    margin-left: 120px;
+    top: 40px;
+    
+}
+
+.contactContainer{
+    position: relative;
+    /* bottom: -270px; */
+    background-color: white;
+    height: 100px;
+    /* margin-top: 50px; */
+}
+
+#pin{
+    width: 30px;
+    height: auto;
+}
+
+#phone{
+    width: 20px;
+    height: auto;
+}
+
+#email{
+    width: 20px;
+    height: auto;
+}

@@ -1,13 +1,7 @@
 
 $(document).ready(function () {
-    $(".portfolio__greetingText").toggle();
-    $(".portfolio__header__animated").toggle();
-    $("#portfolio__about").toggle();
-    $(".divided").toggle();
-    $("#portfolio__bio").toggle();
-    $(".logo").toggle();
+    $(".toggleOnLoad").toggle();
     
-
     // Checking if item is being hoverd on
     $(".dot").hover(function () {
 
@@ -20,7 +14,6 @@ $(document).ready(function () {
             $(this).removeClass("pulse");
         }
     });
-
 
     function fadeIn() {
         $(".portfolio__greetingText").toggle();
@@ -37,7 +30,6 @@ $(document).ready(function () {
         $("#circle").addClass("slideInUp");
         $(".portfolio__divider").addClass("slideInUp");
         $("#portfolio__about").addClass("slideInUp");
-
     }
 
     setTimeout(slideInUp, 1000);
@@ -66,5 +58,4 @@ $(document).ready(function () {
 
     setTimeout(togglingContent, 1000);
 
-    
 });
