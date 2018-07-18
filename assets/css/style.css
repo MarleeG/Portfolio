@@ -220,10 +220,16 @@
     padding: 0px;
 }
 
+
 /* In Modal - View Project Button */
-.projectButton{
+.projectButtonOne{
     position: relative;
-    left: 320px;
+    left: 245px;
+}
+
+.projectButtonTwo{
+    position: relative;
+    left: 300px;
 }
 
 .contactInfo{
@@ -254,4 +260,29 @@
 #email{
     width: 20px;
     height: auto;
+}
+
+/* Resume Button */
+#resumeButton{
+    position: relative;
+    margin-left: 165px;
+    padding: 10px;
+    top: 300px;
+    border-style: solid;
+    border-radius: 50%;
+    border-width: 1px;
+    width: 300px;
+    height: 300px;
+}
+
+.socialButtons{
+    position: relative;
+    margin-left: 10px;
+    padding: 10px;
+    top: 300px;
+    border-style: solid;
+    border-radius: 50%;
+    border-width: 1px;
+    width: 300px;
+    height: 300px;
 }
