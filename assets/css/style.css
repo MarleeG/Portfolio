@@ -201,6 +201,10 @@
 
 }
 
+#friendFinderProject{
+    margin-top: 15px;
+}
+
 /* Project List */
 .projectContainer{
     width: 1000px;
@@ -241,10 +245,8 @@
 
 .contactContainer{
     position: relative;
-    /* bottom: -270px; */
     background-color: white;
     height: 100px;
-    /* margin-top: 50px; */
 }
 
 #pin{
