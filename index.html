@@ -7,7 +7,7 @@
     <title>Marlee Gerard's Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap -->
+    <!-- Bootstrap CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
 
     <!-- Google Fonts -->
@@ -139,6 +139,12 @@
                     <div class="col-lg-4">
                         <img class="projects" id="friendFinderProject" data-toggle="modal" data-target="#friendFinderModal" alt="friendFinder" src="assets/images/friendFinder.png">
                     </div>
+
+                    <div class="col-lg-4">
+                            <img class="projects" id="eatDaBurgerProject" data-toggle="modal" data-target="#eatDaBurgerModal" alt="eatdaburger" src="assets/images/eat-da-burger.png">
+                    </div>
+
+
                 </div>
 
             </div>
@@ -236,9 +242,35 @@
                             <embed src="assets/movies/friendFinder.mp4" width="400" height="350" class="projectVideo" />
                             <p class="aboutProject text-center">FriendFinder application -- basically a dating app. This full-stack site will take in results
                                 from your users' surveys, then compare their answers with those from other users. The app
-                                will then display the name and picture of the user with the best overall match. </p>
+                                will then display the name and picture of the user with the best overall match. The data of a 
+                                new user will then be appended to my AP Friends List that can be accessed at the bottom of the page.</p>
                             <button type="button" class="btn btn-outline-primary projectButton projectButtonOne" onclick="location.href='https://infinite-ridge-36267.herokuapp.com'">View Project</button>
                             <button type="button" class="btn btn-outline-primary projectButton projectButtonTwo" onclick="location.href='https://github.com/MarleeG/FriendFinder'">Repository</button>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Eat-Da-Burger Modal -->
+            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"
+                id="eatDaBurgerModal">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <h2 class="ml-auto mr-auto">Eat-Da-Burger</h2>
+                        </div>
+                        <div class="modal-body">
+                            <embed src="assets/movies/eatDaBurger.mp4" width="400" height="350" class="projectVideo" />
+                            <p class="aboutProject text-center">Eat-Da-Burger! is a restaurant app that lets users input the names of burgers they'd like to eat.Whenever a 
+                                user submits a burger's name, my app will display the burger on the left side of the page -- waiting to be devoured. Each burger in the waiting area also has a `Eat!` button. 
+                                When the user clicks it, the burger will move to the right side of the page.</p>
+                            <button type="button" class="btn btn-outline-primary projectButton projectButtonOne" onclick="location.href='https://afternoon-sea-50798.herokuapp.com'">View Project</button>
+                            <button type="button" class="btn btn-outline-primary projectButton projectButtonTwo" onclick="location.href='https://github.com/MarleeG/burger'">Repository</button>
                         </div>
 
                         <div class="modal-footer">
