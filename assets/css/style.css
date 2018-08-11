@@ -4,9 +4,6 @@
     position: relative;
 }
 
-/* .portfolio__navBar{
-    opacity: 100%;
-} */
 
 .portfolio__greetingText{
     font-family: 'Righteous', cursive;
@@ -44,8 +41,9 @@
     width: 250px;
     height: auto;
     position: relative;
-    margin-left: 50px;
-    
+    left: 25px;
+    top: 30px;
+    border-radius: 120px;
 }
 
 .portfolio__header__animated{
