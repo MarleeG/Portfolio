@@ -1,12 +1,12 @@
 $(document).ready(function () {
-    $(".projects").hover(function () {
-        var isHoveringWRY = $('#who_represents_you').is(":hover");
-        var isHoveringFF = $('#friend_finder').is(":hover");
-        var isHoveringDT = $('#disney_trivia').is(":hover");
-        var isHoveringHM = $('#hangman').is(":hover");
+    $(".toggleOnLoad").toggle();
+    
+    // Checking if item is being hoverd on
+    $(".dot").hover(function () {
 
+        var isHovered = $('.dot').is(":hover");
 
-        if (isHoveringWRY || isHoveringFF || isHoveringDT || isHoveringHM) {
+        if (isHovered) {
             $(this).addClass("pulse");
         } else {
             $(this).removeClass("pulse");
