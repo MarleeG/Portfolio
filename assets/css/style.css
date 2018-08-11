@@ -385,7 +385,6 @@ input:invalid + span:after {
     content: '✖';
     color: #f00;
     padding-left: 5px;
-    /* border-color: red; */
 }
 
 input:valid + span:after {
