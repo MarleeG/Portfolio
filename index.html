@@ -23,36 +23,21 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
 
-
-    <!-- Bootstrap: Javascript | 3.3.7 for Glyphicons -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-    <!-- Style CSS -->
-    <link rel="stylesheet" href="./css/style.css">
-    <!-- ./css/style.css -->
-
+    <!-- My Styles -->
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
 </head>
 
 <body>
-    <!-- Navbar -->
-    <div class="navbar_container">
-        <nav>
-            <ul class="sections">
-                <!-- About -->
-                <li>
-                    <a href="#about_me">About</a>
-                </li>
-                <!-- Contact -->
-                <li>
-                    <a href="#portfolio">Portfolio</a>
-                </li>
-                <!-- Portfolio Contents -->
-                <li>
-                    <a href="#contact_me">Contact</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
+    <div class="portfolio">
+
+        <nav class="navbar navbar-default navbar-fixed-top navbar-dark bg-dark">
+            <!-- top -->
+            <div class="container-fluid">
+                <a class="navbar-brand text-white mt-1 portfolio__title ml-auto" href="index.html#portfolio__about">About</a>
+                <!-- nor working for right alignment: navbar-right | working for right aligned text: ml-auto -->
+                <a class="navbar-brand text-white portfolio__title" href="index.html#portfolio__myPortHeader">Portfolio</a>
+                <a class="navbar-brand text-white portfolio__title mr-auto" href="#">Education</a>
+            </div>
 
         </nav>
 
@@ -63,34 +48,19 @@
             <img src="assets/images/IMG_0831.PNG" alt="avatar" id="portfolio__avatar">
         </div>
 
-                <div class="col-lg-4 col-md-5">
-                    <!-- Who Represents You -->
-                    <img class="projects animated" id="who_represents_you" data-toggle="modal" data-target="#whoRepresentsYouModal" alt="whoRepresentsYouProject"
-                        src="/images/whoRepresentsYou.png">
-                </div>
+        <br>
 
-                <!-- Friend Finder -->
-                <div class="col-lg-4 col-md-5">
-                    <img class="projects animated" id="friend_finder" data-toggle="modal" data-target="#friendFinderModal" alt="whoRepresentsYouProject"
-                        src="/images/friendFinder.png">
-                </div>
+        <!-- Greeting Message -->
+        <h3 class="portfolio__greetingText text-center mt-5 animated ml-auto mr-auto toggleOnLoad">
+            Hello!
+        </h3>
 
-                <div class="col-lg-4 col-md-5">
-                    <!-- Disney Trivia -->
-                    <img class="projects animated" id="disney_trivia" data-toggle="modal" data-target="#disneyTriviaModal" alt="disneyTrivia"
-                        src="/images/disneyTrivia.png">
-                </div>
+        <br>
 
         <!-- Typewriter Header -->
         <h1 class="portfolio__header__animated text-center animated toggleOnLoad" style="font-size: 75px;">I am a Web Developer!</h1>
 
-            <div class="row">
-                <div class="col-lg-4 col-md-5">
-                    <!-- Hangman -->
-                    <img class="projects animated" id="hangman" data-toggle="modal" data-target="#hangmanModal" alt="hangman" src="/images/hangman.png">
-                </div>
-            </div>
-        </div>
+        <br>
 
         <!-- My About Me -->
         <div class="porforlio__aboutMe">
@@ -98,32 +68,6 @@
             <!-- About me Header -->
             <h2 id="portfolio__about" class="text-center animated toggleOnLoad">About Marlee Gerard</h2>
 
-                    <div class="modal-header">
-                        <h2 class="ml-auto mr-auto">Who Represents You?</h2>
-                    </div>
-                    <div class="modal-body">
-
-                        <!-- Video -->
-                        <video id="video-bg-element" preload="auto" autoplay="false" controls muted="muted" width="350" height="215" class="projectVideo">
-                            <source src="./movies/whoRepresentsYou.mp4" type="video/mp4">
-                        </video>
-
-                        <p class="aboutProject text-center mt-3">My team and I created a simple but useful app that allowed users to select which state they wanted
-                            to localize to in order to display at least one member from the House of Representatives and
-                            the two senators according to the users selection.</p>
-                        <div class="projectLinks">
-                            <ul>
-                                <li style="list-style: none;">
-                                    <a href="https://marleeg.github.io/WhoRepresentsYou/index.html" class="projectInfo" target="_blank">
-                                        View Project
-                                    </a>
-                                </li>
-                                <li style="list-style: none;">
-                                    <a href="https://github.com/MarleeG/WhoRepresentsYou" class="projectInfo" target="_blank">
-                                        GitHub Repo
-                                    </a>
-                                </li>
-                            </ul>
 
             <p id="portfolio__bio" class="text-center toggleOnLoad">
                 Experience with full stack web-applications. I was able to assist with debugging a web app and providing feedback on how
@@ -180,32 +124,6 @@
                     <div class="col-lg-4">
                         <img class="projects" id="projectOne" data-toggle="modal" data-target="#projectOneModal" alt="whoRepresentsYouProject" src="assets/images/whoRepresentsYou.png">
                     </div>
-                    <div class="modal-body">
-
-                        <!-- Video -->
-                        <video id="video-bg-element" preload="auto" autoplay="false" controls muted="muted" width="350" height="215" class="projectVideo">
-                            <source src="./movies/disneyTrivia.mp4" type="video/mp4">
-                        </video>
-
-                        <p class="aboutProject text-center mt-3">I created a trivia game that allowed the user to guess the correct answer in a limited amount of
-                            time. If the user guesses incorrectly a point is added to their losses. If they guess correctly
-                            a point is added to their wins. The user can repeat the game as many times as they would like.</p>
-
-                        <div class="projectLinks">
-                            <ul>
-                                <li style="list-style: none;">
-                                    <a href="https://marleeg.github.io/TriviaGame/" class="projectInfo" target="_blank">
-                                        View Project
-                                    </a>
-                                </li>
-                                <li style="list-style: none;">
-                                    <a href="https://github.com/MarleeG/TriviaGame" class="projectInfo" target="_blank">
-                                        GitHub Repo
-                                    </a>
-                                </li>
-                            </ul>
-
-                        </div>
 
                     <div class="col-lg-4">
                         <img class="projects" id="projectTwo" data-toggle="modal" data-target="#projectTwoModal" alt="disneyTriviaProject" src="assets/images/disneyTrivia.png">
@@ -226,67 +144,16 @@
                             <img class="projects" id="eatDaBurgerProject" data-toggle="modal" data-target="#eatDaBurgerModal" alt="eatdaburger" src="assets/images/eat-da-burger.png">
                     </div>
 
-                    <div class="modal-body">
-
-                        <!-- Video -->
-                        <video id="video-bg-element" preload="auto" autoplay="false" controls muted="muted" width="350" height="215" class="projectVideo">
-                            <source src="./movies/hangman.mp4" type="video/mp4">
-                        </video>
-
-                        <p class="aboutProject text-center mt-3">The user will have be able to guess the word on the screen letter by letter. If the user chooses
-                            a letter that is not in the word or a letter that has been guess already they lose a try. If
-                            they choose a letter that is in the word the letter will appear in the corresponding place of
-                            where it is in the word. The user must guess all the letters in the word in order to get a point
-                            added to their wins. If the user fails to guess the word in the amount of tries given then another
-                            word will populate and there wins will not increase nor decrease.</p>
-
-                        <div class="projectLinks">
-                            <ul>
-                                <li style="list-style: none;">
-                                    <a href="https://marleeg.github.io/Word-Guess-Game/" class="projectInfo" target="_blank">
-                                        View Project
-                                    </a>
-                                </li>
-                                <li style="list-style: none;">
-                                    <a href="https://github.com/MarleeG/Word-Guess-Game/" class="projectInfo" target="_blank">
-                                        GitHub Repo
-                                    </a>
-                                </li>
-                            </ul>
 
                 </div>
 
             </div>
 
-                    <div class="modal-header">
-                        <h2 class="ml-auto mr-auto">Friend Finder</h2>
-                    </div>
-                    <div class="modal-body">
-
-                        <!-- Video -->
-                        <video id="video-bg-element" preload="auto" autoplay="false" controls muted="muted" width="350" height="215" class="projectVideo">
-                            <source src="./movies/friendFinder.mp4" type="video/mp4">
-                        </video>
-
-                        <p class="aboutProject text-center mt-3">FriendFinder application -- basically a friend finding app that helps connect with individuals similar
-                            to you. This full-stack site will take in results from your users' surveys, then compare their
-                            answers with those from other users. The app will then display the name and picture of the user
-                            with the best overall match. The data of a new user will then be appended to my AP Friends List
-                            that can be accessed at the bottom of the page.</p>
-
-                        <div class="projectLinks">
-                            <ul>
-                                <li style="list-style: none;">
-                                    <a href="https://infinite-ridge-36267.herokuapp.com" class="projectInfo" target="_blank">
-                                        View Project
-                                    </a>
-                                </li>
-                                <li style="list-style: none;">
-                                    <a href="https://github.com/MarleeG/FriendFinder" class="projectInfo" target="_blank">
-                                        GitHub Repo
-                                    </a>
-                                </li>
-                            </ul>
+            <!-- Project One Modal -->
+            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"
+                id="projectOneModal">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
 
                         <div class="modal-header">
                             <h2 class="ml-auto mr-auto">Who Represents You?</h2>
@@ -307,27 +174,11 @@
                 </div>
             </div>
 
-    <hr class="page_divider">
-
-    <!-- About Me -->
-    <div class="container-fluid about_me_contents" id="about_me">
-        <h2 id="about_me_header">About Me</h2>
-
-        <div class="about_marlee mx-auto">
-
-            <div class="description">
-                <!-- Image -->
-                <img src="./images/marleegerard.jpg" alt="marlee_gerard" id="marlee_image">
-                <p id="brand_statement" class="mt-5">Experience with full stack web-applications. I was able to assist with debugging a web app and providing
-                    feedback on how to get maximum use out of it during my employment at The Home Depot. I am highly analytical
-                    and able to multitask. I enjoy creating applications that can be useful too many as well as building
-                    on existing projects to expand different capabilities and/or debugging it if needed. Many of my attributes
-                    include being organized, positive attitude, supreme communication skills, quick learning ability, collaborating
-                    with others well, and staying in sync with the latest technologies. I am passionate about Web Development
-                    since it allows me to be creative in many different avenues such as; the functionality and/or the appearance
-                    of an application.
-                </p>
-            </div>
+            <!-- Project Two Modal -->
+            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"
+                id="projectTwoModal">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
 
                         <div class="modal-header">
                             <h2 class="ml-auto mr-auto">Disney Trivia Game</h2>
@@ -384,34 +235,23 @@
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
 
-    <!-- Contact Me -->
-    <!-- <div class="container-fluid contact_me_contents" id="contact_me">
-        <div class="row contact_info text_center">
-            <div class="col-lg-4 col-md-4">
-                <img src="/images/pin.png" alt="pin" id="pin_img"> Marietta, GA
-            </div>
-            <div class="col-lg-4 col-md-4">
-                <img src="/images/phone.png" alt="phone" id="phone_img">
-                <a href="tel:16783089393" id="phone_number">678.308.9393</a>
-            </div>
-            <div class="col-lg-4 col-md-4">
-                <img src="/images/email.png" alt="email" id="email_img">
-                <a href="mailto:marleegerard@gmail.com" id="email">marleegerard@gmail.com</a>
-            </div>
-        </div>
-    </div> -->
+                        <div class="modal-header">
+                            <h2 class="ml-auto mr-auto">Friend Finder</h2>
+                        </div>
+                        <div class="modal-body">
+                            <embed src="assets/movies/friendFinder.mp4" width="400" height="350" class="projectVideo" />
+                            <p class="aboutProject text-center">FriendFinder application -- basically a dating app. This full-stack site will take in results
+                                from your users' surveys, then compare their answers with those from other users. The app
+                                will then display the name and picture of the user with the best overall match. The data of a 
+                                new user will then be appended to my AP Friends List that can be accessed at the bottom of the page.</p>
+                            <button type="button" class="btn btn-outline-primary projectButton projectButtonOne" onclick="location.href='https://infinite-ridge-36267.herokuapp.com'">View Project</button>
+                            <button type="button" class="btn btn-outline-primary projectButton projectButtonTwo" onclick="location.href='https://github.com/MarleeG/FriendFinder'">Repository</button>
+                        </div>
 
-    <div class="container-fluid form">
-        <h2 id="contact_me_header">Contact Me</h2>
-        <form class="form-contents">
-            <div class="form-row form-field-name">
-                <div class="col">
-                    <label for="validationCustom01">First name</label>
-                    <input type="text" class="form-control" id="first_name" placeholder="First name">
-                </div>
-                <div class="col">
-                    <label for="validationCustom02">Last name</label>
-                    <input type="text" class="form-control" id="first_name" placeholder="Last name">
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -452,11 +292,9 @@
             <div class="container-fluid contactContainer">
                 <div class="row contactInfo">
 
-        <a href="#" target="_blank" id="form_button">
-            <span class="glyphicon glyphicon-envelope"></span>
-            Submit
-        </a>
-    </div>
+                    <div class="col-lg-4">
+                        <img src="assets/images/pin.png" alt="pin" id="pin"> Marietta, GA
+                    </div>
 
                     <div class="col-lg-4">
                         <img src="assets/images/phone.png" alt="phone" id="phone">
@@ -471,8 +309,7 @@
             </div>
         </footer>
 
-    <!-- JavaScript -->
-    <script src="./javascript/main.js"></script>
+    </div>
 
     <!-- Javacsript -->
     <script src="assets/javascript/main.js"></script>

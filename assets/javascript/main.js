@@ -1,3 +1,4 @@
+
 $(document).ready(function () {
     $(".toggleOnLoad").toggle();
     
@@ -8,53 +9,53 @@ $(document).ready(function () {
 
         if (isHovered) {
             $(this).addClass("pulse");
+            $(this).removeClass("bounceInDown");
         } else {
             $(this).removeClass("pulse");
         }
     });
 
+    function fadeIn() {
+        $(".portfolio__greetingText").toggle();
+        $(".portfolio__header__animated").toggle();
+        $(".portfolio__greetingText").addClass("fadeIn");
+        $(".portfolio__header__animated").addClass("fadeIn");
+    }
 
-    function clearInput() {
-        var firstname = $('#first_name').val(''),
-            lastname = $('#last_name').val(''),
-            email = $('#exampleInputEmail1').val(''),
-            phone = $('#phone').val('');
-    };
+    setTimeout(fadeIn, 600);
 
-    $('#form_button').on('click', function (event) {
-        event.preventDefault(); // Prevent Page from Refreshing
-        var firstname = $('#first_name').val(),
-            lastname = $('#last_name').val(),
-            email = $('#exampleInputEmail1').val(),
-            phone = $('#phone').val();
+    function slideInUp() {
+        $("#portfolio__about").toggle();
+        $(".divided").toggle();
+        $("#circle").addClass("slideInUp");
+        $(".portfolio__divider").addClass("slideInUp");
+        $("#portfolio__about").addClass("slideInUp");
+    }
 
-        var visitor = {
-            firstname,
-            lastname,
-            email,
-            phone
-        };
+    setTimeout(slideInUp, 1000);
 
-        console.log('Visitor: ', visitor);
+    $(".portfolio__title").on('click', function(event) {
 
-        $.ajax({
-            url: '/message',
-            method: 'POST',
-            data: visitor
-        })
-            .then(function (data) {
-                clearInput();
-            })
-            .catch(function (data) {
-                // TODO
-            });
+        if (this.hash !== "") {
+          event.preventDefault();
+    
+          // Store hash
+          var hash = this.hash;
+    
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+       
+            window.location.hash = hash;
+          });
+        }
     });
 
+    function togglingContent(){
+        $("#portfolio__bio").toggle();
+        $(".logo").toggle();
+    }
 
-    /*
-        first_name
-        last_name
-        exampleInputEmail1
-        phone
-    */
+    setTimeout(togglingContent, 1000);
+
 });
